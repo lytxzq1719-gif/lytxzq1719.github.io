@@ -7,56 +7,43 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f5f7;color:#1d1d1f;line-height:1.6}
-
 .header{background:linear-gradient(135deg,#DA251D 0%,#B31B15 100%);color:#fff;padding:36px 20px 28px;text-align:center}
 .header .cross{display:inline-block;width:44px;height:44px;position:relative;margin-bottom:10px}
 .header .cross::before{content:"";position:absolute;width:34px;height:8px;background:#fff;border-radius:4px;top:50%;left:50%;transform:translate(-50%,-50%)}
 .header .cross::after{content:"";position:absolute;width:8px;height:34px;background:#fff;border-radius:4px;top:50%;left:50%;transform:translate(-50%,-50%)}
 .header h1{font-size:22px;letter-spacing:2px;font-weight:700}
 .header .sub{font-size:12px;opacity:.75;margin-top:6px}
-
 .container{padding:16px;max-width:500px;margin:0 auto}
-
 .card{background:#fff;border-radius:14px;box-shadow:0 2px 12px rgba(0,0,0,.06);overflow:hidden;margin-bottom:16px}
 .card-hd{padding:16px 18px 0;display:flex;align-items:center;gap:10px}
 .card-hd .ico{width:28px;height:28px;border-radius:8px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
-.ico-r{background:#DA251D}
-.ico-g{background:#059669}
+.ico-r{background:#DA251D}.ico-g{background:#059669}
 .card-hd .ico svg{width:16px;height:16px;fill:#fff}
 .card-hd h2{font-size:17px;font-weight:600;color:#1d1d1f}
 .card-bd{padding:12px 18px 18px}
-
 .vw{position:relative;width:100%;padding-bottom:56.25%;background:#000;border-radius:10px;overflow:hidden;margin-top:4px}
 .vw iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
 .vt{text-align:center;font-size:12px;color:#8e8e93;margin-top:10px}
-
 .cs{display:grid;gap:10px;margin-top:12px}
 .cp{display:flex;align-items:flex-start;gap:12px;padding:12px 14px;background:#fef2f2;border-radius:10px;border-left:3px solid #DA251D}
 .cp .n{width:24px;height:24px;background:#DA251D;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;margin-top:1px}
 .cp .t{font-size:13px;color:#374151}
-
-.weapp-btn{background:#059669;color:#fff;border-radius:14px;padding:18px 14px;text-align:center;cursor:pointer;margin-top:4px;transition:background .2s;border:none;width:100%;font-family:inherit}
+.weapp-btn{background:#059669;color:#fff;border-radius:14px;padding:18px 14px;text-align:center;cursor:pointer;margin-top:4px;transition:background .2s;border:none;width:100%;font-family:inherit;font-size:16px}
 .weapp-btn:active{background:#047857}
 .weapp-btn .title{font-size:17px;font-weight:700;margin-bottom:4px}
 .weapp-btn .desc{font-size:12px;opacity:.85}
-
-.fallback{background:#f0fdf4;border-radius:10px;padding:12px 14px;border:1px solid #bbf7d0;margin-top:12px;font-size:12px;color:#374151;text-align:center}
-
-.map-grid{display:flex;gap:10px;margin-top:12px}
+.fallback{margin-top:12px;font-size:12px;color:#6b7280;text-align:center;line-height:1.8}
+.fallback strong{color:#059669}
+.map-grid{display:flex;gap:10px;margin-top:14px}
 .map-card{flex:1;background:#f5f5f7;border-radius:12px;padding:14px 10px;text-align:center;text-decoration:none;color:#1d1d1f;border:1.5px solid transparent;display:block;transition:all .2s}
 .map-card:active{border-color:#3b82f6;background:#eff6ff}
 .map-card .icon{font-size:24px;margin-bottom:6px}
 .map-card h3{font-size:13px;font-weight:600;margin-bottom:2px}
 .map-card p{font-size:10px;color:#8e8e93}
-
 .ft{text-align:center;padding:20px 16px 32px;font-size:11px;color:#a1a1aa}
-
 @media(prefers-color-scheme:dark){
-body{background:#1c1c1e;color:#f5f5f7}
-.card{background:#2c2c2e}.card-hd h2{color:#f5f5f7}
-.cp{background:#2c1a1a}.cp .t{color:#d1d5db}
-.fallback{background:#1a3a2c;border-color:#065f46;color:#d1d5db}
-.map-card{background:#3a3a3c;color:#f5f5f7}
+body{background:#1c1c1e;color:#f5f5f7}.card{background:#2c2c2e}.card-hd h2{color:#f5f5f7}
+.cp{background:#2c1a1a}.cp .t{color:#d1d5db}.map-card{background:#3a3a3c;color:#f5f5f7}
 .map-card:active{border-color:#3b82f6;background:#1a2a3c}
 }
 </style>
@@ -112,28 +99,29 @@ body{background:#1c1c1e;color:#f5f5f7}
 
     <button class="weapp-btn" onclick="openWeApp()">
       <div class="title">📱 打开 AED急救地图</div>
-      <div class="desc">点击自动跳转微信小程序 · 腾讯官方出品</div>
+      <div class="desc">腾讯官方出品 · 微信小程序</div>
     </button>
 
     <div class="fallback">
-      ⚠️ 如未自动跳转：下拉微信首页 → 搜索 <strong style="color:#059669;">AED急救地图</strong> → 打开即可
+      ⚠️ 如未成功跳转：下拉微信首页 → 搜索 <strong>"AED急救地图"</strong> → 打开即可使用<br>
+      或搜索 <strong>"救命地图"</strong>、<strong>"AED地图"</strong> 作为备选
     </div>
 
     <div class="map-grid">
       <a class="map-card" href="https://apis.map.qq.com/uri/v1/search?keyword=AED" target="_blank" rel="noopener">
         <div class="icon">🗺️</div>
         <h3 style="color:#3b82f6;">腾讯地图</h3>
-        <p>跳转APP搜"AED"</p>
+        <p>搜索"AED"查看位置</p>
       </a>
       <a class="map-card" href="https://uri.amap.com/search?keyword=AED" target="_blank" rel="noopener">
         <div class="icon">🗺️</div>
         <h3 style="color:#f59e0b;">高德地图</h3>
-        <p>跳转APP搜"AED"</p>
+        <p>搜索"AED"查看位置</p>
       </a>
     </div>
 
-    <div style="font-size:11px;color:#a1a1aa;margin-top:16px;padding:10px 12px;background:#f9fafb;border-radius:8px;border:1px solid #e5e7eb;text-align:center">
-      AED使用：打开电源 → 贴电极片 → 分析心律（勿碰患者）→ 如建议电击，按按钮 → 继续胸外按压
+    <div style="font-size:11px;color:#6b7280;margin-top:14px;padding:10px 12px;background:#f9fafb;border-radius:8px;border:1px solid #e5e7eb;text-align:center">
+      <strong>⚡ AED使用：</strong>开电源 → 贴电极 → 分析心律（勿碰患者）→ 按电击 → 继续按压
     </div>
 
   </div>
@@ -150,10 +138,7 @@ body{background:#1c1c1e;color:#f5f5f7}
 function openWeApp() {
   var btn = document.querySelector('.weapp-btn');
   btn.innerHTML = '<div class="title">⏳ 正在跳转...</div><div class="desc">请稍候</div>';
-  window.location.href = "weixin://dl/business/?appid=wx87eed2c15caaca73&env_version=release";
-  setTimeout(function() {
-    btn.innerHTML = '<div class="title">📱 打开 AED急救地图</div><div class="desc">点击自动跳转微信小程序 · 腾讯官方出品</div>';
-  }, 3000);
+  window.location.href = "weixin://dl/business/?appid=wx87eed2c15caaca73&path=pages%2Findex%2Findex&env_version=release";
 }
 </script>
 
