@@ -3,40 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>博爱急救指南 路 苏州工业职业技术学院</title>
+<title>博爱急救指南</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f5f7;color:#1d1d1f;line-height:1.6}
 .header{background:linear-gradient(135deg,#DA251D 0%,#B31B15 100%);color:#fff;padding:36px 20px 28px;text-align:center}
-.cross{display:inline-block;width:44px;height:44px;position:relative;margin-bottom:10px}
-.cross::before{content:'';position:absolute;width:34px;height:8px;background:#fff;border-radius:4px;top:50%;left:50%;transform:translate(-50%,-50%)}
-.cross::after{content:'';position:absolute;width:8px;height:34px;background:#fff;border-radius:4px;top:50%;left:50%;transform:translate(-50%,-50%)}
+.header .cross{display:inline-block;width:44px;height:44px;position:relative;margin-bottom:10px}
+.header .cross::before{content:"";position:absolute;width:34px;height:8px;background:#fff;border-radius:4px;top:50%;left:50%;transform:translate(-50%,-50%)}
+.header .cross::after{content:"";position:absolute;width:8px;height:34px;background:#fff;border-radius:4px;top:50%;left:50%;transform:translate(-50%,-50%)}
 .header h1{font-size:22px;letter-spacing:2px;font-weight:700}
-.header p{font-size:13px;opacity:.85;margin-top:6px;letter-spacing:1px}
-.sub{text-align:center;font-size:11px;color:#888;padding:0 20px 10px;letter-spacing:1px}
 .container{padding:16px;max-width:500px;margin:0 auto}
 .card{background:#fff;border-radius:14px;box-shadow:0 2px 12px rgba(0,0,0,.06);overflow:hidden;margin-bottom:16px}
 .card-hd{padding:16px 18px 0;display:flex;align-items:center;gap:10px}
+.card-hd .ico{width:28px;height:28px;border-radius:8px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.ico-r{background:#DA251D}.ico-g{background:#059669}
 .card-hd h2{font-size:17px;font-weight:600;color:#1d1d1f}
-.ico{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.ico-r{background:#DA251D}
-.ico-g{background:#059669}
 .card-bd{padding:12px 18px 18px}
 .vw{position:relative;width:100%;padding-bottom:56.25%;background:#000;border-radius:10px;overflow:hidden}
 .vw iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
 .vt{text-align:center;font-size:12px;color:#8e8e93;margin-top:10px}
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.ac{background:#f5f5f7;border-radius:12px;padding:16px 12px;text-align:center;text-decoration:none;color:#1d1d1f;border:1.5px solid transparent;display:block;transition:all .2s}
+.ac:active{border-color:#059669;background:#f0fdf4}
+.ac .ib{width:40px;height:40px;border-radius:10px;margin:0 auto 8px;display:flex;align-items:center;justify-content:center}
+.ac h3{font-size:13px;font-weight:600;margin-bottom:2px}
+.ac p{font-size:11px;color:#8e8e93}
+.as{margin-top:14px;background:#f0fdf4;border-radius:10px;padding:14px 16px;border:1px solid #bbf7d0}
+.as h4{font-size:13px;color:#059669;margin-bottom:8px}
+.as ol{padding-left:18px;font-size:13px;color:#374151}
+.as ol li{margin-bottom:6px}
 .cs{display:grid;gap:10px;margin-top:12px}
 .cp{display:flex;align-items:flex-start;gap:12px;padding:12px 14px;background:#fef2f2;border-radius:10px;border-left:3px solid #DA251D}
 .cp .n{width:24px;height:24px;background:#DA251D;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;margin-top:1px}
 .cp .t{font-size:13px;color:#374151}
 .ft{text-align:center;padding:20px 16px 32px;font-size:11px;color:#a1a1aa}
-@media(prefers-color-scheme:dark){
-body{background:#1c1c1e;color:#f5f5f7}
-.card{background:#2c2c2e}
-.card-hd h2{color:#f5f5f7}
-.cp{background:#2c1a1a}
-.cp .t{color:#d1d5db}
-}
+@media(prefers-color-scheme:dark){body{background:#1c1c1e;color:#f5f5f7}.card{background:#2c2c2e}.card-hd h2{color:#f5f5f7}.ac{background:#3a3a3c;color:#f5f5f7}.ac:active{border-color:#059669;background:#1a3a2c}.as{background:#1a3a2c;border-color:#065f46}.as ol{color:#d1d5db}.cp{background:#2c1a1a}.cp .t{color:#d1d5db}}
 </style>
 </head>
 <body>
@@ -44,24 +45,25 @@ body{background:#1c1c1e;color:#f5f5f7}
 <div class="header">
   <div class="cross"></div>
   <h1>博爱急救指南</h1>
-  <p>苏州工业职业技术学院 路 博爱青春</p>
+  <p style="font-size:12px;opacity:.8;margin-top:6px">苏州工业职业技术学院 · 汽车工程学院 · 博爱青春2026</p>
 </div>
-<div class="sub">心肺复苏 + AED位置查找</div>
 
 <div class="container">
 
+<!-- === CPR视频 === -->
 <div class="card">
-  <div class="card-hd"><div class="ico ico-r"><svg viewBox="0 0 24 24" fill="white" width="16" height="16"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div><h2>心肺复苏教学视频</h2></div>
+  <div class="card-hd"><div class="ico ico-r"></div><h2>心肺复苏教学视频</h2></div>
   <div class="card-bd">
     <div class="vw">
-      <iframe src="https://player.bilibili.com/player.html?bvid=BV1Kg411T7cb&high_quality=1&autoplay=0" allowfullscreen></iframe>
+      <iframe src="https://player.bilibili.com/player.html?bvid=BV1Kg411T7cb&page=1&high_quality=1&autoplay=0" allowfullscreen></iframe>
     </div>
-    <div class="vt">点击播放 路 建议横屏观看</div>
+    <div class="vt">点击播放 · 建议横屏观看</div>
   </div>
 </div>
 
+<!-- === CPR步骤 === -->
 <div class="card">
-  <div class="card-hd"><div class="ico ico-r"><svg viewBox="0 0 24 24" fill="white" width="16" height="16"><path d="M19 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h4l3 3 3-3h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm-6 7.5c0-2 4-3.1 6-3.1s6 1.1 6 3.1V13H6v-1.5z"/></svg></div><h2>急救步骤速记</h2></div>
+  <div class="card-hd"><div class="ico ico-r"></div><h2>急救步骤速记</h2></div>
   <div class="card-bd">
     <div class="cs">
       <div class="cp"><div class="n">1</div><div class="t"><strong>确认安全</strong> — 确保现场环境安全，做好自身防护（戴手套等）</div></div>
@@ -74,64 +76,60 @@ body{background:#1c1c1e;color:#f5f5f7}
   </div>
 </div>
 
+<!-- === AED查找 === -->
 <div class="card">
-  <div class="card-hd"><div class="ico ico-g"><svg viewBox="0 0 24 24" fill="white" width="16" height="16"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div><h2>查找附近的AED</h2></div>
+  <div class="card-hd"><div class="ico ico-g"></div><h2>查找附近的AED</h2></div>
   <div class="card-bd">
     <p style="font-size:13px;color:#6b7280;margin-bottom:12px">AED配合心肺复苏使用，可使心搏骤停患者的生还率提升2-3倍。</p>
 
-    <div style="background:#059669;color:white;border-radius:10px;padding:14px;text-align:center;margin-bottom:12px;">
-      <div style="font-size:16px;font-weight:bold;margin-bottom:4px;">📱 在微信中打开</div>
-      <div style="font-size:12px;opacity:0.9;">首页下拉 → 搜索「AED急救地图」→ 打开使用</div>
-    </div>
-
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;">
-      <div style="background:#f5f5f7;border-radius:10px;padding:14px 10px;text-align:center;">
-        <div style="font-size:22px;margin-bottom:2px;">①</div>
-        <div style="font-size:13px;font-weight:600;">下拉微信首页</div>
-        <div style="font-size:11px;color:#8e8e93;">或点「发现」→「小程序」</div>
+    <div style="margin:14px 0;">
+      <div style="background:#059669;color:white;border-radius:12px;padding:14px;text-align:center;margin-bottom:12px;cursor:pointer" onclick="openWeApp()">
+        <div style="font-size:16px;font-weight:bold;margin-bottom:4px;">📱 点击打开 AED急救地图</div>
+        <div style="font-size:12px;opacity:0.9;">AppID: wx87eed2c15caaca73 · 腾讯官方出品</div>
       </div>
-      <div style="background:#f5f5f7;border-radius:10px;padding:14px 10px;text-align:center;">
-        <div style="font-size:22px;margin-bottom:2px;">②</div>
-        <div style="font-size:13px;font-weight:600;">搜索小程序名</div>
-        <div style="font-size:12px;color:#059669;font-weight:bold;">AED急救地图</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;">
+        <div style="background:#f5f5f7;border-radius:10px;padding:12px 10px;text-align:center;">
+          <div style="font-size:22px;margin-bottom:2px;">①</div>
+          <div style="font-size:12px;font-weight:600;">下拉微信首页</div>
+          <div style="font-size:10px;color:#8e8e93;">或点「发现」→「小程序」</div>
+        </div>
+        <div style="background:#f5f5f7;border-radius:10px;padding:12px 10px;text-align:center;">
+          <div style="font-size:22px;margin-bottom:2px;">②</div>
+          <div style="font-size:12px;font-weight:600;">搜索小程序名</div>
+          <div style="font-size:11px;color:#059669;font-weight:bold;">AED急救地图</div>
+        </div>
+        <div style="background:#f5f5f7;border-radius:10px;padding:12px 10px;text-align:center;">
+          <div style="font-size:22px;margin-bottom:2px;">③</div>
+          <div style="font-size:12px;font-weight:600;">授权位置</div>
+          <div style="font-size:10px;color:#8e8e93;">自动显示附近AED位置</div>
+        </div>
+        <div style="background:#f5f5f7;border-radius:10px;padding:12px 10px;text-align:center;">
+          <div style="font-size:22px;margin-bottom:2px;">④</div>
+          <div style="font-size:12px;font-weight:600;">备选搜索</div>
+          <div style="font-size:10px;color:#8e8e93;">「救命地图」「AED地图」</div>
+        </div>
       </div>
-      <div style="background:#f5f5f7;border-radius:10px;padding:14px 10px;text-align:center;">
-        <div style="font-size:22px;margin-bottom:2px;">③</div>
-        <div style="font-size:13px;font-weight:600;">授权位置</div>
-        <div style="font-size:11px;color:#8e8e93;">自动显示附近AED位置</div>
+      <div style="display:flex;gap:8px;">
+        <div style="flex:1;background:#f5f5f7;border-radius:10px;padding:12px 10px;text-align:center;">
+          <div style="font-size:14px;margin-bottom:2px;">🗺️</div>
+          <div style="font-size:12px;font-weight:600;color:#3b82f6;">腾讯地图</div>
+          <div style="font-size:10px;color:#8e8e93;">搜索「AED」</div>
+        </div>
+        <div style="flex:1;background:#f5f5f7;border-radius:10px;padding:12px 10px;text-align:center;">
+          <div style="font-size:14px;margin-bottom:2px;">🗺️</div>
+          <div style="font-size:12px;font-weight:600;color:#f59e0b;">高德地图</div>
+          <div style="font-size:10px;color:#8e8e93;">搜索「AED」</div>
+        </div>
+        <div style="flex:1;background:#f5f5f7;border-radius:10px;padding:12px 10px;text-align:center;">
+          <div style="font-size:14px;margin-bottom:2px;">💚</div>
+          <div style="font-size:12px;font-weight:600;color:#059669;">百度地图</div>
+          <div style="font-size:10px;color:#8e8e93;">搜索「AED」</div>
+        </div>
       </div>
-      <div style="background:#f5f5f7;border-radius:10px;padding:14px 10px;text-align:center;">
-        <div style="font-size:22px;margin-bottom:2px;">④</div>
-        <div style="font-size:13px;font-weight:600;">也可搜这些</div>
-        <div style="font-size:11px;color:#8e8e93;">「救命地图」「AED地图」</div>
-      </div>
-    </div>
-
-    <div style="display:flex;gap:8px;">
-      <div style="flex:1;background:#f5f5f7;border-radius:10px;padding:12px 10px;text-align:center;">
-        <div style="font-size:14px;margin-bottom:2px;">🗺️</div>
-        <div style="font-size:12px;font-weight:600;color:#3b82f6;">腾讯地图</div>
-        <div style="font-size:10px;color:#8e8e93;">搜索「AED」</div>
-      </div>
-      <div style="flex:1;background:#f5f5f7;border-radius:10px;padding:12px 10px;text-align:center;">
-        <div style="font-size:14px;margin-bottom:2px;">🗺️</div>
-        <div style="font-size:12px;font-weight:600;color:#f59e0b;">高德地图</div>
-        <div style="font-size:10px;color:#8e8e93;">搜索「AED」</div>
-      </div>
-      <div style="flex:1;background:#f5f5f7;border-radius:10px;padding:12px 10px;text-align:center;">
-        <div style="font-size:14px;margin-bottom:2px;">🗺️</div>
-        <div style="font-size:12px;font-weight:600;color:#059669;">百度地图</div>
-        <div style="font-size:10px;color:#8e8e93;">搜索「AED」</div>
-      </div>
-    </div>
-
-    <div style="background:#f0fdf4;border-radius:10px;padding:12px 14px;border:1px solid #bbf7d0;margin-top:12px;font-size:12px;color:#374151;text-align:center;">
-      <strong>💡 提示：</strong>截图保存此页 → 微信「扫一扫」→ 从相册选二维码即可<br>
-      或在微信首页下拉，搜索 <strong style="color:#059669;">AED急救地图</strong>
     </div>
 
     <div style="font-size:12px;color:#6b7280;margin-top:12px;padding:12px;background:#f9fafb;border-radius:8px;border:1px solid #e5e7eb">
-      <strong>⚡ AED使用口诀：</strong>打开电源 → 按图示粘贴电极片 → 分析心律（切忽触摸患者）→ 如建议电击，按下按钮 → 立即继续胸外按压
+      <strong>⚡ AED使用口诀：</strong>打开电源 → 按图示粘贴电极片 → 分析心律（切忽触碰患者）→ 如建议电击，按下按钮 → 立即继续胸外按压
     </div>
   </div>
 </div>
@@ -139,9 +137,20 @@ body{background:#1c1c1e;color:#f5f5f7}
 <div class="ft">
   <p>苏州工业职业技术学院 · 汽车工程学院 · 博爱青春2026</p>
   <p style="margin-top:2px;color:#d1d5db">博爱新引擎2.0 · 续航行动</p>
-  <p style="margin-top:6px;color:#e5e7eb">长按保存此页到手机</p>
 </div>
 
 </div>
+
+<script>
+function openWeApp() {
+  var b = document.querySelector('[onclick="openWeApp()"]');
+  if (b) {
+    b.style.background = "#388e3c";
+    b.innerHTML = '<div style="font-size:16px;font-weight:bold;margin-bottom:4px;">⏳ 正在跳转...</div><div style="font-size:12px;opacity:0.9;">请稍候</div>';
+  }
+  window.location.href = "weixin://dl/business/?appid=wx87eed2c15caaca73&env_version=release";
+}
+</script>
+
 </body>
 </html>
